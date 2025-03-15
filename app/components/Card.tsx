@@ -20,6 +20,7 @@ export default function Card({
   imageLink,
   committee,
 }: MemberCardProps) {
+  console.log("Image Link:", imageLink);
   return (
     <div className=" text-black">
       {gender ? (
@@ -32,13 +33,21 @@ export default function Card({
         />
       ) : (
         <div className="w-[10rem] h-[10rem] flex items-center justify-center rounded-full bg-white border-2 border-gray-300 mx-auto mb-2">
-          <img
-            src={imageLink ? imageLink : ""}
-            alt={`${name} placeholder`}
+          <Image
+            src={imageLink || ""}
+            alt={`${name} profile`}
             height={200}
             width={200}
             className="rounded-full px-4"
           />
+          {/* <img
+            // src={imageLink ? imageLink.src : ""}
+            src={imageLink?.src}
+            alt={`${name} placeholder`}
+            height={200}
+            width={200}
+            className="rounded-full px-4"
+          /> */}
         </div>
       )}
 
