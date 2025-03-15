@@ -25,8 +25,9 @@ const filters = [
 
 export default function PostsFilters() {
   const { activeFilter, setActiveFilter } = useFilters();
+
   function handleFilterClick(id: number) {
-    setActiveFilter((prev) => (prev === id ? null : id)); 
+    setActiveFilter((prev) => (prev === id ? null : id));
   }
 
   return (
