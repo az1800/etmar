@@ -7,14 +7,29 @@ export default function Members() {
   const pathname = usePathname();
 
   const [cards, setCards] = useState([]);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     try {
+  //       const data = await getMembers();
+
+  //       setCards(data); // Ensure it's always an array
+  //     } catch (error) {
+  //       console.error("Error fetching members:", error);
+  //     }
+  //   }
+
+  //   fetchData();
+  // }, []);
   useEffect(() => {
     async function fetchData() {
       try {
         const data = await getMembers();
 
-        setCards(data); // Ensure it's always an array
+        // Ensure `data` is always an array
+        setCards(Array.isArray(data) ? data : []);
       } catch (error) {
         console.error("Error fetching members:", error);
+        setCards([]); // Set empty array on error
       }
     }
 
