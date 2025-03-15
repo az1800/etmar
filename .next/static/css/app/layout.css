@@ -608,6 +608,10 @@ video {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .mb-12 {
   margin-bottom: 3rem;
 }
