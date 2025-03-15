@@ -3,10 +3,20 @@ import React, { useEffect, useState } from "react";
 import getMembers from "../Services/membersAPI";
 import Card from "./Card";
 import { usePathname } from "next/navigation";
+interface Member {
+  id: number;
+  full_Name: string;
+  Position: string;
+  Committee: string;
+  Gender: string;
+}
+
 export default function Members() {
   const pathname = usePathname();
 
-  const [cards, setCards] = useState([]);
+  // const [cards, setCards] = useState([]);
+  const [cards, setCards] = useState<Member[]>([]);
+
   // useEffect(() => {
   //   async function fetchData() {
   //     try {
@@ -25,8 +35,11 @@ export default function Members() {
       try {
         const data = await getMembers();
 
-        // Ensure `data` is always an array
-        setCards(Array.isArray(data) ? data : []);
+        if (Array.isArray(data)) {
+          setCards(data as Member[]); // Explicitly cast to Member[]
+        } else {
+          setCards([]); // Set empty array if the response is not an array
+        }
       } catch (error) {
         console.error("Error fetching members:", error);
         setCards([]); // Set empty array on error
