@@ -1,0 +1,1 @@
+{"c":["app/layout","app/Pages/partners/page","app/Pages/blog/page","app/Pages/structure/page","webpack"],"r":[],"m":["(app-pages-browser)/./app/Services/partnersAPI.ts","(app-pages-browser)/./app/Services/supabase.js","(app-pages-browser)/./app/Services/postsAPI.ts","(app-pages-browser)/./app/Services/membersAPI.ts"]}

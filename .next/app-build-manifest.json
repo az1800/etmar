@@ -6,21 +6,31 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/Pages/partners/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/Pages/partners/page.js"
+      "static/chunks/app/page.js"
     ],
-    "/Pages/blog/page": [
+    "/structure/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/Pages/blog/page.css",
-      "static/chunks/app/Pages/blog/page.js"
+      "static/chunks/app/structure/page.js"
     ],
-    "/Pages/structure/page": [
+    "/partners/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/Pages/structure/page.js"
+      "static/chunks/app/partners/page.js"
+    ],
+    "/blog/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/blog/page.css",
+      "static/chunks/app/blog/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

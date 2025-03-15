@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/components/Companies.tsx"
+    "components/Companies.tsx"
   ],
   "exclude": ["node_modules"]
 }
