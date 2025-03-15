@@ -55,7 +55,9 @@ export default function HeroSection() {
               {post ? post.Title : "عنوان غير متوفر"}
             </h1>
 
-            <p className="mb-8">{post ? post.Content : "المحتوى غير متوفر"}</p>
+            <p className="mb-8" dir="rtl">
+              {post ? post.Content : "المحتوى غير متوفر"}
+            </p>
             {post && (
               <Link href={post.Post_Link}>
                 <button

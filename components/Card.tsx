@@ -42,21 +42,13 @@ export default function Card({
             width={200}
             className="rounded-full px-4"
           />
-          {/* <img
-            // src={imageLink ? imageLink.src : ""}
-            src={imageLink?.src}
-            alt={`${name} placeholder`}
-            height={200}
-            width={200}
-            className="rounded-full px-4"
-          /> */}
         </div>
       )}
 
       <h1 className="text-lg font-semibold text-center">{name}</h1>
       {position && (
         <p className=" text-center">
-          {position} في {committee}
+          {position} في لجنة {committee}
         </p>
       )}
     </div>
