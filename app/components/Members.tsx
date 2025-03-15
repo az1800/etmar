@@ -16,20 +16,6 @@ export default function Members() {
 
   // const [cards, setCards] = useState([]);
   const [cards, setCards] = useState<Member[]>([]);
-
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     try {
-  //       const data = await getMembers();
-
-  //       setCards(data); // Ensure it's always an array
-  //     } catch (error) {
-  //       console.error("Error fetching members:", error);
-  //     }
-  //   }
-
-  //   fetchData();
-  // }, []);
   useEffect(() => {
     async function fetchData() {
       try {
