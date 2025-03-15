@@ -42,7 +42,7 @@ export default function Members() {
 
   return (
     <>
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-12 mx-auto">
+      {/* <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-12 mx-auto">
         {firstRow.map((card) => (
           <Card
             key={card.id}
@@ -50,6 +50,20 @@ export default function Members() {
             name={card.full_Name}
             position={card.Position}
             committee={card.Committee}
+          />
+        ))}
+      </div> */}
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-12 mx-auto">
+        {firstRow.map((card, index) => (
+          <Card
+            key={card.id}
+            gender={card.Gender}
+            name={card.full_Name}
+            position={card.Position}
+            committee={card.Committee}
+            className={
+              index === 0 ? "col-span-2 sm:col-span-2 md:col-span-1" : ""
+            }
           />
         ))}
       </div>

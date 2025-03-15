@@ -11,6 +11,7 @@ type MemberCardProps = {
   position?: string;
   imageLink?: string;
   committee?: string;
+  className?: string;
 };
 
 export default function Card({
@@ -19,10 +20,11 @@ export default function Card({
   position,
   imageLink,
   committee,
+  className,
 }: MemberCardProps) {
   console.log("Image Link:", imageLink);
   return (
-    <div className=" text-black">
+    <div className={` text-black ${className}`}>
       {gender ? (
         <img
           src={gender === "Woman" ? womanPlaceholder.src : manPlaceholder.src}

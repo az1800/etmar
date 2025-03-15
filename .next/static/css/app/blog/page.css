@@ -528,6 +528,10 @@ video {
   z-index: 10;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .m-20 {
   margin: 5rem;
 }
@@ -1229,6 +1233,10 @@ video {
 
 @media (min-width: 640px) {
 
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1282,6 +1290,10 @@ video {
 }
 
 @media (min-width: 768px) {
+
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
 
   .md\:block {
     display: block;
