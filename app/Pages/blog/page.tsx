@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 import HeroSection from "../../components/HeroSection";
 import Pagination from "../../components/Pagination";
 import Posts from "../../components/Posts";
