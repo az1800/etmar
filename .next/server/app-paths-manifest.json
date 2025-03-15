@@ -1,3 +1,4 @@
 {
-  "/Pages/partners/page": "app/Pages/partners/page.js"
+  "/Pages/partners/page": "app/Pages/partners/page.js",
+  "/Pages/blog/page": "app/Pages/blog/page.js"
 }

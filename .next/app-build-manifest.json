@@ -10,6 +10,12 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/Pages/partners/page.js"
+    ],
+    "/Pages/blog/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Pages/blog/page.css",
+      "static/chunks/app/Pages/blog/page.js"
     ]
   }
 }

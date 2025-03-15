@@ -105,7 +105,7 @@ export default function Posts() {
       <b className="flex flex-row justify-between w-full lg:justify-end ">
         <button
           onClick={() => {
-            setIsOpen(!open);
+            setIsOpen(!isOpen);
             console.log("filter is clicked");
           }}
         >
