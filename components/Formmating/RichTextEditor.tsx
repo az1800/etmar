@@ -385,7 +385,7 @@ const TipTapEditor = () => {
 
         {/* Submit Button (2 Portions) */}
         <button
-          className="bg-[#164B20] rounded-md w-[70%] h-[2.5rem] text-white font-semibold transition-all hover:bg-[#126018] disabled:bg-gray-400"
+          className="bg-[#164B20] rounded-md w-[70%] h-[2rem] text-white font-semibold transition-all hover:bg-[#126018] disabled:bg-gray-400"
           onClick={handleSubmit}
           disabled={loading}
         >
