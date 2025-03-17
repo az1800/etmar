@@ -4,6 +4,7 @@ import ethmarlogoS from "../Assets/ethmarlogoS.svg";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { HamburgerMenu } from "./AnimatedHamburgerButton";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -20,14 +21,19 @@ export default function Header() {
 
         {/* Hamburger Menu (Shown on Small Screens) */}
         <div className="lg:hidden md:block sm:block">
-          <button
+          <HamburgerMenu
             className="text-7xl focus:outline-none text-white"
             onClick={() => {
               setOpen(!open);
             }}
-          >
-            ☰
-          </button>
+          />
+
+          {/* <HanburgerMenu
+            className="text-7xl focus:outline-none text-white"
+            onClick={() => {
+              setOpen(!open);
+            }}
+          /> */}
         </div>
         {/* Logo */}
         <Link href="/">

@@ -1,4 +1,4 @@
-// File: /Users/abdulazizalmousa/Desktop/Ethmar_Project/h hlb jhjn bhjn bh/xxx/etmar/app/blog/page.tsx
+// File: /Users/abdulazizalmousa/Desktop/Ethmar_Project/etmar/app/blog/page.tsx
 import * as entry from '../../../../app/blog/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

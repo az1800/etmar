@@ -10,6 +10,7 @@ import Pagination from "./Pagination";
 import { useSearchParams, usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import Filter from "./Filter";
+import { FilterButton } from "./FilterButton";
 type Post = {
   id: number;
   Category: string;
@@ -103,14 +104,13 @@ export default function Posts() {
   return (
     <div className="flex flex-col justify-end items-end m-8">
       <b className="flex flex-row justify-between w-full lg:justify-end ">
-        <button
+        <FilterButton
+          className="inline-block lg:hidden "
           onClick={() => {
             setIsOpen(!isOpen);
             console.log("filter is clicked");
           }}
-        >
-          <FaFilter size={36} className="inline-block lg:hidden " />
-        </button>
+        />
         <h1 className="text-4xl mb-8">جميع المنشورات</h1>
       </b>
       {isOpen && (

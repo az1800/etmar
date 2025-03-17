@@ -6,7 +6,7 @@ import NewsletterSubscription from "./NewsletterSubscription";
 
 export default function Footer() {
   return (
-    <div className="bg-black">
+    <div className="bg-black mt-auto">
       <div className="flex flex-row justify-between mx-12">
         <div className="flex flex-row gap-1 items-center">
           <Link href="https://x.com/ethmar_spp?s=21">
@@ -26,18 +26,6 @@ export default function Footer() {
           </Link>
         </div>
         <NewsletterSubscription />
-        {/* <div className="text-right">
-          <p className="text-white">اشترك في نشرتنا البريدية</p>
-          <input
-            type="text"
-            id=""
-            placeholder="ادخل بريدك الالكتروني"
-            className="bg-white text-right"
-          />
-          <button className="bg-green-800 text-white p-4 rounded-l-2xl flex items-center justify-center ">
-            <FaArrowLeft size={24} />
-          </button>
-        </div> */}
       </div>
     </div>
   );
